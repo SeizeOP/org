@@ -95,6 +95,14 @@ Navigate to 'about:config' in URL bar, and accept the warning.
 *Documentation:* [[https://github.com/arkenfox/user.js/wiki][Wiki]]
 *Description:* Custom userjs file for firefox
 
+* References
+This document is a personal configuration outline, and is not intended as a definitive guide to firefox hardening. To this end included bellow are a couple resources that where helpfull in the creation of this configuration outline.
+
+- [[https://thenewoil.org/en/guides/most-important/browser/][The New Oil]]
+- [[https://www.privacyguides.org/en/desktop-browsers/][Privacy Guides]]
+
+There are probably other sites/guides that influenced this write-up, however are the two I remember.
+
 * Footnotes
 [fn:0] End to End Encrypted
 [fn:1] I have never known this setting to cause any website breakage, however you can always change it back to Standard or Custom if you do.
