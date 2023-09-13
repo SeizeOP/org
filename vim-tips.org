@@ -1,0 +1,48 @@
+#+title: Vim Tips
+#+author: Henry Davies
+#+description: Some VIM binding to help me become more efficient.
+* Source video ([[https://odysee.com/vim-tips-and-tricks-some-of-my-favorite:e6a73337ca11960fee7575906d67c4f924fb541f][Vim Tips & Tricks]])
+* Keybindings
+** Normal mode
+*** Deletion
+*u* = undo
+*gg* = go to beginning of document
+*G* = go to end of document
+*k* = move up a single line. (can be held)
+*x* = delete single character highlighted by cursor
+*dw* = delete a word
+*dd* = delete a line
+*p* = pasta a line
+*ddp* = swap line of text with line below.
+*kddp* = move up one line. Then swap line of text with line below.
+*di"* = Delete inside " " quote block
+*yi"* = Copy inside " " quote block
+*dG* = Delete to the end of the document
+*dgg* = delete to the beginning of the document
+*** Indents
+*S* = Indent a single line
+*gg=G* Indent entire document
+*** Cursor
+*L* = Move cursor to lower third of screen
+*M* = Move cursor to middle third of screen
+*H* = Move cursor to upper(high) third of screen
+*Ctrl+u* = Move cursor up half a screen
+*Ctrl+d* = Move cursor down half a screen
+*** Windows
+*Ctrl+w+c* = Close current window
+** Insert mode
+*** Deletion
+*Ctrl+w* = Delete entire previous word
+*Ctrl+h* = Delete single previous character
+*Ctrl+u* = Delete everything in front of cursor on a single line
+*Ctrl+o* = Allows running of Normal mode commands in Insert mode
+** Command mode
+to disable a command prepend comand name with no , or postpend ! or &
+*:set spell* = Enable spell checking
+*:set nospell* = Disabe spell checking
+*:set spell!* = Disabe spell checking
+*:set spell&* = Disabe spell checking
+*:help j* = show help information for j key
+*:h* = :help
+*:h v_d* = show help information for d key in Visual mode
+*:h i_<esc>* = show help information for ESC key in Insert mode

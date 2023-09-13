@@ -1,0 +1,83 @@
+#+title: Org Mode Basics in Doom Emacs
+#+DESCRIPTION: An org document to demonstrate org mode
+#+AUTHOR: Derek Taylor
+
+* A New Headline
+** Level 2
+*** Level 3
+**** Level 4
+***** Level 5
+****** Level 6
+** Rotate current subtree between states : TAB
+** Rotate entire buffer between states : S-TAB
+** close (fold) the tree : zc
+** open (unfold) the tree: zo
+** fold everything : zM
+** unfold everything : zR
+* Getting Started in org mode
+Read org mode manual with M-x org-info.
+** org-toggle-heading : SPC-m-h
+** org-toggle-item : SPC-m-i
++ Unordered list item one.
++ Unordered list item two.
+  - You can use dash instead of +
+  - Another list item.
+    1. Ordered list item one.
+    2. Ordered list item two.
+* Motion
+** move left/down/up/right : h/j/k/l
+** next/prev heading : gj/gk OR CTR-j/k
+** move prent/child element : gh/gl
+* Structure Editing
+** insert new heading after subtree : C-RET
+** promote/demote heading : M-h/l OR M-LEFT/M-RIGHT
+** promote/demote current subtree : M-S-h/l or M-S-LEFT/M-s-RIGHT
+** move subtree/list item up/down : M-j/k
+** move list item up/down but not subtree : M-S-j/k
+* Some advanced editing thanks to Evil Mode!
+** delete an element : dae
+** select a subtree : vaR
+** delete a subtree : daR
+** yank subtree : yiR
+* Insert Snippets
+** SPC-i-s
+** #!/usr/bin/env bash
+** Insert a license : pick a free license
+** current time : Mon Apr 24 23:01:48 2023
+** pi : 3.141592654
+* TODO
+** TODO example one
+** TODO example two
+** to remove TODO : S-LEFT
+** toggle the todo state : SPC-m-t
+** org-schedule : SPC-m-d-s
+SCHEDULED: <2023-04-24 Mon>
+* To create a checkbox : - [ ] [1/3] [33%]
+- [ ] eggs
+- [ ] milk
+- [X] beer : C-c C-c OR RET
+** Move this file to the front of agenda : C-c-[
+** Org-agenda : SPC-o-a
+* Tables
+** Creating a table
+*** just start typing | Name | Phone | Age |
+*** Go to forward/backward by cell : TAB/S-TAB
+*** Make org table headline : SPC m b -
+*** Duplicate a field in the cell bellow : S-RET
+
+| ONE    | TWO          | THREE | FOUR |
+|--------+--------------+-------+------|
+| A Word | Another Word |       |      |
+|        | Another Word |       |      |
+|        |              |       |      |
+|        |              |       |      |
+| five   | Another Word |       |      |
+** Table motion
+*** Move current row UP : M-k
+*** Move current row DOWN : M-j
+*** Move current column LEFT : M-h
+*** Move current column RIGHT : M-l
+*** Insert new column : M-S-l
+*** Delete current column : M-S-h
+*** Insert new row : M-S-j
+*** Delete current row : M-S-k
