@@ -1,5 +1,5 @@
 #+title: Firefox Hardening
-#+author: Henry Davies
+#+author: HD
 #+description: A personal outline of Firefox configuration for security and privacy.
 
 * Firefox Configuration Guide
@@ -91,7 +91,7 @@ Navigate to 'about:config' in URL bar, and accept the warning.
 - toggle extensions.pocket.enabled false
 *Optional*
   - toggle middlemouse.paste
-    - Useful if on Windows and dual booting with linux. (so used to middle mouse paste now)
+    - Useful if on Windows and dual booting with Linux. (so used to middle mouse paste now)
 **** Arkenfox User.js
 *Author:* Thorin-Oakenpants
 *Homepage:* [[https://github.com/arkenfox/user.js][Arkenfox]]
