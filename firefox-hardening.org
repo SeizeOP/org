@@ -1,5 +1,5 @@
 #+title: Firefox Hardening
-#+author: Henry Davies
+#+author: HD
 #+description: A personal outline of Firefox configuration for security and privacy.
 
 * Firefox Configuration Guide
