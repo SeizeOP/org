@@ -1,0 +1,103 @@
+#+title: Firefox Hardening
+#+author: Henry Davies
+#+description: A personal outline of Firefox configuration for security and privacy.
+
+* Firefox Configuration Guide
+** My Configuration :My:Configuration:
+This guide is intended to outline my current Firefox configuration; including security hardening and style configuration. Since a complete Firefox configuration can be rather complex; this guide has been separated into three sections (Settings, Extensions & Themes, and Manual Configuration). This separation of topics will help to clarify the purpose of any instructions in each section.
+
+*** Settings
+**** General
+***** Startup
+- Open previous windows & tabs: Disabled
+***** Tabs
+- Ctrl+Tab cycles through tabs in recently used order: Enabled
+- Open links in tabs instead of new windows: Enabled
+- Confirm before quitting with Ctrl+Q: Enabled
+***** Browsing
+- Recommend extensions as you browse: Disabled
+- Recommend features as you browse: Disabled
+**** Home
+***** New Windows & Tabs
+- Homepage & New windows: Tabliss
+- New Tabs: Tabliss
+***** Firefox Home Content
+Since Tabliss is in use these settings don't matter that much. However these are still the recommended settings.
+- Web Search: Enabled
+- Shortcuts: Enabled | 1 row
+  - Sponsored shortcuts: Disabled
+- Recommended by Pocket: Disabled
+- Recent activity: Disabled
+- Snippets: Disabled
+**** Search
+***** Search Bar
+- Add search bar in toolbar: Enabled
+***** Default Search Engine
+- [[https://search.brave.com/][Brave Search]]
+  There are various privacy respecting search/meta-search engines available. This selection comes down to personal preference. Just make sure to pick something other than Google or Bing.
+***** Search Suggestions
+- Provide search suggestions: Disabled
+**** Privacy & Security
+- Enhanced Tracking Protection: Strict[fn:1]
+- Cookies & Site Data: Delete cookies and site data when Firefox is closed: checked
+- Logins and Passwords: Uncheck all[fn:2]
+- History: Never remember history
+- Address Bar - Firefox Suggest: Suggestions from the web: disabled
+- Address Bar - Firefox Suggest: Suggestions from sponsors: disabled
+- Firefox Data Collection and Use: Uncheck all
+- Enable HTTPS-Only Mode in all windows
+**** Sync
+Not enabled
+- Contents are E2EE[fn:0]; so not a security/privacy issue. However only usefull if Firefox is installed on multiple devices.
+*** Extensions & Themes
+**** Extensions
+Extensions can increase attack surface, have privileged access in browser, requiring developer trust. For this reason it is reccommended to keep extensions to a minimum.
+***** Tabliss
+Used to replace the default new tab and home pages in Firefox with a more user friendly layout and style. This is a personal choice for consistency; generally only Ublock Origin and maybe the extension for your chosen password manager is reccommended.
+Author: Tabliss
+Homepage: [[https://tabliss.io/][tabliss.io]]
+***** Ublock Origin
+*Author:* Raymond Hill
+*Homepage:* [[https://github.com/gorhill/uBlock#ublock-origin][ublock-origin]]
+*Documentation:* [[https://github.com/gorhill/uBlock/wiki][Wiki]]
+*Description:* Ublock Origin is a wide-spectrum content blocker, with sane defaults and easy to configure settings.
+****** Configuration
+******* Blocking Mode[fn:3]
+- Hard Mode
+******* My Filters
+Custom domain filters
+#+begin_quote
+youtube.com
+facebook.com
+instagram.com
+google.com
+twitter.com
+x.com
+twitch.tv
+justin.tv
+discord.gg
+discord.com
+snapchat.com
+tiktok.com
+douyin.com
+skype.com
+#+end_quote
+**** Themes
+System theme - auto ([[https://draculatheme.com/gtk][Dracula]])[fn:4]
+*** Manual Configuration
+**** About:Config
+Navigate to 'about:config' in URL bar, and accept the warning.
+- toggle privacy.resistFingerprinting true
+- toggle extensions.pocket.enabled false
+**** Arkenfox User.js
+*Author:* Thorin-Oakenpants
+*Homepage:* [[https://github.com/arkenfox/user.js][Arkenfox]]
+*Documentation:* [[https://github.com/arkenfox/user.js/wiki][Wiki]]
+*Description:* Custom userjs file for firefox
+
+* Footnotes
+[fn:0] End to End Encrypted
+[fn:1] I have never known this setting to cause any website breakage, however you can always change it back to Standard or Custom if you do.
+[fn:2] There is malware capable of swiping data stored in your browser, including history and saved passwords, credit cards, and even multi-factor authentication cookies. You can choose to leave cookies and other sign-in data and history if you want, but know that it is a security risk.
+[fn:3] See the [[https://github.com/gorhill/uBlock/wiki/Blocking-mode][Wiki]] for further explanation of Ublock Origin's blocking modes.
+[fn:4] On my main system [[https://fedoraproject.org/spins/sway/][Fedora Sway]] I use the Dracula gtk theme to provide a fairly universal UI/UX computing experience.
