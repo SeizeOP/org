@@ -90,8 +90,8 @@ Navigate to 'about:config' in URL bar, and accept the warning.
 - toggle privacy.resistFingerprinting true
 - toggle extensions.pocket.enabled false
 *Optional*
-- toggle middlemouse.paste
-  Useful if on Windows and dual booting with linux. (so used to middle mouse paste now)
+  - toggle middlemouse.paste
+    - Useful if on Windows and dual booting with linux. (so used to middle mouse paste now)
 **** Arkenfox User.js
 *Author:* Thorin-Oakenpants
 *Homepage:* [[https://github.com/arkenfox/user.js][Arkenfox]]
