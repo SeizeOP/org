@@ -1,5 +1,5 @@
 #+title: Vim Tips
-#+author: Henry Davies
+#+author: HD
 #+description: Some VIM binding to help me become more efficient.
 * Source video ([[https://odysee.com/vim-tips-and-tricks-some-of-my-favorite:e6a73337ca11960fee7575906d67c4f924fb541f][Vim Tips & Tricks]])
 * Keybindings
