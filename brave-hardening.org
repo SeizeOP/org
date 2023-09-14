@@ -1,0 +1,67 @@
+#+title: Brave Hardening
+#+author: Henry Davies
+#+description: A personal outline of Brave Browser configurations for security and privacy.
+
+* Brave Browser Hardening Guide
+A personal outline of Brave Browser configurations for security and privacy. For those times when a chromium based browser is required or desired.
+
+Use of non chromium based browsers supports [[https://en.wikipedia.org/wiki/Usage_share_of_web_browsers][browser diversity]]. However Brave browser provides a simple, private, and secure web browser; making it a convinient choice when in need of a privacy respecting chromium based web browser.
+** My Configuration
+*** Settings
+**** Getting Started
+- On Startup: Open the New Tab page: Enabled
+**** Appearance
+- Show home button: Enabled
+- Show Brave News button in address bar: Disabled
+- Use wide Address bar: Enabled
+- Always show full URLs: Enabled
+- Show autocomplete in address bar: Disabled
+- Show Sidebar: Never
+- Show Sidebar button: Disabled
+- Speedreader: Enabled
+- Cycle through the most recently used tabs with Ctrl-Tab: Enabled
+**** Shields
+- Prevent sites from fingerprinting me based on my language preferences: Enabled
+- Trackers & ads blocking: Aggressive
+- Upgrade connections to HTTPS: Strict
+- Block Scripts: Enabled [fn:1]
+**** Rewards
+- Show Brave Rewards icon in address bar: Disabled
+- Show Tip buttons on sites: Disabled
+**** Social media blocking
+- Disable everything
+**** Privacy & Security
+- WebRTC IP handling policy: Disable non-proxied UDP
+- Use Google services for push messaging: Disabled
+- Allow privacy-preserving product analytics (P3A): Disabled
+- Automatically send daily usage ping to Brave: Disabled
+- Automatically send diagnostic reports: Disabled
+- Improve search suggestions: Disabled
+- Private window with TOR: Disabled [fn:2]
+**** Sync
+Sync is E2EE in Brave.
+**** Search engine
+- Web Discovery Project: Disabled
+- Index other search engines: Enabled
+**** Extensions & Themes
+Disable built in extensions not in use
+- Allow Google login for extensions: Disabled
+- Hangouts: Disabled
+- Media Router: Disabled [fn:3]
+- WebTorrent: Disabled
+- Widevine: Disabled [fn:4]
+***** Custom Extensions
+This is personal preference. keep un-necessary extensions to a minimum as the can increase attack surface and require an extension of trust.
+
+The one extra extension listed here is used to improve browser new tab pages. This helps create a more uniform and intuitive user experience across browsers.
+
+- Tabliss - A Beautiful New Tab
+**** Web3
+- Default Ethereum wallet: Extensions (no fallback)
+- Default Solana wallet: Extensions (no fallback)
+- Method to resolve IPFS resources: Disabled
+* Footnotes
+'[fn:1: This option provides functionality similar to Ublock Origin's advanced blocking modes or the NoScript extension. This will break sites.]'
+'[fn:2: Where strong anonymity is required use the [[https://www.torproject.org/][TOR Browser]].]'
+'[fn:3: Enables cast features in browser. If cast is an important feature, do not disable.]'
+'[fn:4: Enables Widevine DRM for viewing protected streaming video and content in browser. Many popular streaming services will not function with extension disabled.]'
